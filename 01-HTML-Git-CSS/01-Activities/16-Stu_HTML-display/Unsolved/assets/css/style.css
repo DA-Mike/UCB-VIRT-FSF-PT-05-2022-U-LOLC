@@ -37,8 +37,16 @@ img {
   background-color: #999900;
 }
 
-/* Box 3 */
+/* Box 3 <- seems like it's not needed, so I removed it from index.html*/
 #image-3 {
   /* TODO: Add your code here */
   display: none;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.display-block {
+  display: block;
 }
