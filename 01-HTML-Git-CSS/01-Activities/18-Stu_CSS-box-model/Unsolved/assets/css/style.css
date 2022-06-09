@@ -1,8 +1,8 @@
 section {
-  width: 600px;
+  border: 15px solid black;
   height: 600px;
   text-align: center;
-  border: 15px solid black;
+  width: 600px;
 }
 
 img {
@@ -10,6 +10,9 @@ img {
   height: 200px;
   background-color: lightblue;
   /* TODO: Add a margin property */
+  margin: 22px;
   /* TODO: Add a padding property */
+  padding: 17px;
   /* TODO: Add a border property */
+  border: 10px solid darkblue;
 }
