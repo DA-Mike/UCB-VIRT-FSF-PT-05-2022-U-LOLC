@@ -40,7 +40,7 @@ img {
 /* Box 3 <- seems like it's not needed, so I removed it from index.html*/
 #image-3 {
   /* TODO: Add your code here */
-  display: none;
+  display: none; /* could have eliminated this line; display: none will always display nothing */
 }
 
 .display-inline {

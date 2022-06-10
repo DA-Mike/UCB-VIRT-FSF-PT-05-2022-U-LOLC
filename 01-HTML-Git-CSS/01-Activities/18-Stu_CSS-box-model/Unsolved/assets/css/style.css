@@ -3,6 +3,7 @@ section {
   height: 600px;
   text-align: center;
   width: 600px;
+  margin: 0 auto;
 }
 
 img {
@@ -15,4 +16,4 @@ img {
   padding: 17px;
   /* TODO: Add a border property */
   border: 10px solid darkblue;
-}
+  }

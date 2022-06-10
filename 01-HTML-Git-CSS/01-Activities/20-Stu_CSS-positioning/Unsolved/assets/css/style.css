@@ -1,7 +1,7 @@
 body {
-  position: relative;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 main {
@@ -19,21 +19,21 @@ img {
 }
 
 header {
+  background-color: lightblue;
+  border-bottom: 10px solid darkblue;
+  height: 100px;
   position: fixed;
   top: 0;
-  z-index: 2;
   width: 100%;
-  height: 100px;
-  border-bottom: 10px solid darkblue;
-  background-color: lightblue;
+  z-index: 2;
 }
 
 /* Square 1 and 2 */
 .container {
-  width: 600px;
+  border: 15px solid black;
   height: 600px;
   margin: 20px auto;
-  border: 15px solid black;
+  width: 600px;
 }
 
 /* Square 2 */
@@ -44,9 +44,14 @@ header {
 /* Box 2 in Square 1 */
 #relative-box-2 {
   /* TODO: Set the position so it is centered in Square 1 */
+  position: relative;
+  left: 200px;
 }
 
 /* Box 2 in Square 2 */
 #absolute-box-2 {
   /* TODO: Set the position so it is outside of the upper-right corner of Square 2 */
+  position: absolute;
+  left: 700px;
+  top: 0px;
 }
