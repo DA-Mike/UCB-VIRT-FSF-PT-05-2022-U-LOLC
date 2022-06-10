@@ -1,0 +1,90 @@
+/* CSS Stylesheet */
+
+/* Element Selectors */
+head {
+    background-color: aquamarine;
+    color: blue
+}
+
+header {
+    background-color: aqua;
+    color: blue;
+}
+
+body {
+    background-color: aquamarine;
+    color: blue;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+}
+
+li {
+    display: inline;
+    padding: 0px 20px;
+    text-decoration: none;
+  }
+
+footer {
+    background-color: aqua;
+    color: blue;
+}
+
+figure {
+    border: 20px solid blanchedalmond;
+    height: 600px;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 500px;
+    padding: 10px;
+    border: 5px solid #DDAF94;
+    border-radius: 20px;
+  }
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input, 
+textarea {
+  box-sizing: border-box;
+  width: 300px;
+  border: 1px solid #4F4846;
+}
+
+textarea {
+  vertical-align: top;
+  height: 60px;
+}
+  
+button {
+  height: 40px;
+  width: 120px;
+  background-color: #4F4846;
+  color: #FDF8F5;
+}
+
+section {
+    margin-bottom: 0;
+    padding: 20px 10px 40px 10px;
+    border-top: 3px solid #DDAF94;
+    background-color:  #E8CEBF;
+}
+
+/* Class Selectors */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
