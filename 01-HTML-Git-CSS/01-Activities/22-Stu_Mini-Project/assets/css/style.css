@@ -1,0 +1,29 @@
+/* CSS Stylesheet */
+
+head {
+    background-color: aquamarine;
+    color: blue
+}
+
+header {
+    background-color: aqua;
+    color: blue;
+}
+
+body {
+    background-color: aquamarine;
+    color: blue;
+}
+
+footer {
+    background-color: aqua;
+    color: blue;
+}
+
+section {
+    border: 20px solid blanchedalmond;
+    height: 600px;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+}
