@@ -1,24 +1,52 @@
 /* CSS Stylesheet */
 
+* {
+    margin:0;
+    padding:0;
+}
+
 /* Element Selectors */
 head {
-    background-color: aquamarine;
-    color: blue
+    background-color: darkslategray;
+    color: rgb(0, 153, 255)
 }
 
 header {
-    background-color: aqua;
-    color: blue;
+    height: 50px;
+    width: 100%;
+    line-height: 70px;
+    background-color: darkslategray;
+    color: rgb(0, 153, 255);
+    border-bottom: 10px solid rgb(178, 178, 178);
+}
+
+a {
+    color: rgb(0, 153, 255);
+    font-size: 25px;
+    font-family: fantasy;
 }
 
 body {
-    background-color: aquamarine;
-    color: blue;
+    position: relative;
+    background-color: gray;
+    color: rgb(0, 76, 255);
+    font-family: fantasy;
+}
+
+main {
+    /*padding: 25px;*/
+}
+
+h1 {
+    color: rgb(0, 76, 255);
+    padding: 15px;
+    font-family: fantasy;
+    border-bottom: 10px solid rgb(178, 178, 178);
 }
 
 img {
     display: block;
-    margin: 20px auto;
+    margin: 100px auto;
 }
 
 li {
@@ -28,11 +56,16 @@ li {
   }
 
 footer {
-    background-color: aqua;
-    color: blue;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    background-color: darkslategray;
+    color: rgb(0, 153, 255);
+    border-top: 10px solid rgb(178, 178, 178);;
 }
 
 figure {
+    position:relative;
     border: 20px solid blanchedalmond;
     height: 600px;
     text-align: center;
@@ -49,6 +82,9 @@ form {
     border-radius: 20px;
   }
 
+h2 {
+    padding-bottom: 10px;
+}
 label {
     display: inline-block;
     width: 100px;
@@ -65,19 +101,26 @@ textarea {
   vertical-align: top;
   height: 60px;
 }
-  
+
+div {
+    padding-top: 10px;
+}
+
 button {
   height: 40px;
   width: 120px;
   background-color: #4F4846;
   color: #FDF8F5;
+  font-family: fantasy;
+  font-size: 20px;
 }
 
 section {
     margin-bottom: 0;
-    padding: 20px 10px 40px 10px;
+    padding: 10px 10px 20px 10px;
     border-top: 3px solid #DDAF94;
     background-color:  #E8CEBF;
+    margin-top: 25px;
 }
 
 /* Class Selectors */
