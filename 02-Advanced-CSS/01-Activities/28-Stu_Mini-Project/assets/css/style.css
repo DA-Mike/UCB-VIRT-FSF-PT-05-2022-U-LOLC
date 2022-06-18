@@ -12,14 +12,34 @@ body {
 }
 
 main {
-    display: flex;
+    /*display: flex;*/
     margin-top: 2%;
     flex-wrap: wrap;
 }
 
+
+h2{
+    margin-block-end: 8px;
+    margin-block-start: 8px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p {
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.boxes{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -15px;
+    margin-right: -15px;
+}
 .fbox {
     border: dashed;
-    display: flex;
+    /*display: flex;*/
     border-color: white;
     border-width: 2px;
     flex: 1 0 200px;
@@ -33,12 +53,15 @@ main {
 .box-header {
     text-align: center;
     border: solid;
-    display: flex;
+    /*display: flex;*/
     flex-wrap: wrap;
     border-color: white;
     flex: 1 0 200px;
     border-width: 2px;
     position: relative;
+    margin: -20px;
+    padding: 5px 10px;
+    background-color: rgb(44, 44, 44);
 }
 
 p {
@@ -57,6 +80,7 @@ pre {
     justify-content: left;
     padding: 10px 12px;
     align-items: center;
+    margin-top: 10px;
 }
 
 code:active {
