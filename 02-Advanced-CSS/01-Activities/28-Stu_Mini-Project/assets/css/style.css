@@ -1,5 +1,64 @@
 header {
-    color: green;
+    color: rgb(59, 248, 59);
     font-size: large;
-    background-color: gray;
+    background-color: rgb(44, 44, 44);
+    padding: 20px;
 }
+
+body {
+    background-color: rgb(44, 44, 44);
+    color: rgb(59, 248, 59);
+    font-size: medium;
+}
+
+main {
+    display: flex;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+.fbox {
+    border: dashed;
+    display: flex;
+    border-color: white;
+    border-width: 2px;
+    flex: 1 0 200px;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.box-header {
+    text-align: center;
+    border: solid;
+    display: flex;
+    flex-wrap: wrap;
+    border-color: white;
+    flex: 1 0 200px;
+    border-width: 2px;
+    position: relative;
+}
+
+p {
+    display: block;
+    flex-wrap: wrap;
+}
+
+pre {
+    text-align: left;
+}
+.code-box {
+    background-color: rgb(59, 248, 59);
+    color: white;
+    display: flex;
+    border-radius: 20px;
+    justify-content: left;
+    padding: 10px 12px;
+    align-items: center;
+}
+
+code:active {
+    user-select: all;
+  }
