@@ -4,16 +4,26 @@ var mainEl = document.getElementById('main');
 var message =
   'Some say the world will end in 🔥, Some say in ice. From what I’ve tasted of desire, I hold with those who favor fire. But if it had to perish twice, I think I know enough of hate. To say that for destruction ice, Is also great, And would suffice.';
 var words = message.split(' ');
-
+// var timeLeft = 5;
 function countdown() {
-  var timeLeft = 5;
+  var timeLeft = 6;
 
   // TODO: Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
   var timeInterval = setInterval(function () {
     //
     // YOUR CODE HERE
+    timeLeft--;
+    timerEl.textContent = timeLeft + " seconds left.";
+
     //
-  });
+    if(timeLeft === 0) {
+      // Stops execution of action at set interval
+      clearInterval(timeInterval);
+      // Calls function to create and append image
+      displayMessage();
+    }
+
+  }, 1000);
 }
 
 // Displays the message one word at a time
