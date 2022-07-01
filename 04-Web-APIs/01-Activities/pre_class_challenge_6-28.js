@@ -18,3 +18,20 @@ var max = function(num1, num2) {
 
 console.log("6, 4: ", max(6,4));
 console.log("6, -4: ", max(6, -4));
+
+var oneToNumber = function(num) {
+    var i = 0;
+    var sum = 0;
+    while (i < num) {
+        sum += num - i;
+        i++;
+    }
+    return sum;
+}
+
+var onToNumber2 = function(num) {
+    var sum = 0;
+    for (let i = 1; i <= num; i++) {
+        sum += i;
+    }
+}
