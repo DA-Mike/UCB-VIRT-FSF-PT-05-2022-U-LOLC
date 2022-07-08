@@ -8,10 +8,13 @@ var todos = [];
 // TODO: What is the purpose of this function?
 function renderTodos() {
   // TODO: Describe the functionality of the following two lines of code.
+  //empties the todo list and sets count to match the number of todos
   todoList.innerHTML = "";
   todoCountSpan.textContent = todos.length;
   
   // TODO: Describe the functionality of the following `for` loop.
+  // goes through each todo and creates a list item with data index
+  //creates button, appends to list (creates the checklist)
   for (var i = 0; i < todos.length; i++) {
     var todo = todos[i];
 
@@ -28,10 +31,14 @@ function renderTodos() {
 }
 
 // TODO: What is the purpose of the following function?
+//On page load, parses objects from localstorage, invokes renderTodos function
+//basically retrieves saved list (saved in localstorage)
 function init() {
   // TODO: What is the purpose of the following line of code?
+  //converts string in local to object
   var storedTodos = JSON.parse(localStorage.getItem("todos"));
   // TODO: Describe the functionality of the following `if` statement.
+  //
   if (storedTodos !== null) {
     todos = storedTodos;
   }
@@ -41,18 +48,22 @@ function init() {
 
 function storeTodos() {
   // TODO: Describe the purpose of the following line of code.
+  //converts todo object to string and stores it
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 // TODO: Describe the purpose of the following line of code.
+//calls function on button click
 todoForm.addEventListener("submit", function(event) {
   event.preventDefault();
   var todoText = todoInput.value.trim();
   // TODO: Describe the functionality of the following `if` statement.
+  //if the input is nothing, end function
   if (todoText === "") {
     return;
   }
  // TODO: Describe the purpose of the following lines of code.
-  todos.push(todoText);
+ // 
+ todos.push(todoText);
   todoInput.value = "";
  
   // TODO: What will happen when the following functions are called?
