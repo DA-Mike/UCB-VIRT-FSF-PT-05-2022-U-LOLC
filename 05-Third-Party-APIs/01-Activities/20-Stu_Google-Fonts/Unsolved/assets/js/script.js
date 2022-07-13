@@ -10,7 +10,7 @@ var printGuestData = function (name, comment) {
 
   var cardEl = $('<div>');
   // add a class of .custom-card
-  cardEl.addClass('card h-100');
+  cardEl.addClass('card h-100 custom-card');
   cardEl.appendTo(cardColumnEl);
 
   // add a class of .custom-card-header
@@ -43,6 +43,7 @@ var handleFormSubmit = function (event) {
   // reset form
   nameInputEl.val('');
   commentInputEl.val('');
+  formEl.val('');
 };
 
 formEl.on('submit', handleFormSubmit);

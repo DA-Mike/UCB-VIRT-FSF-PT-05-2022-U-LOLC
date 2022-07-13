@@ -42,9 +42,11 @@
 .custom-card {
   border-color: var(--teal);
   color: var(--brown);
+  font-family: 'Edu NSW ACT Foundation', cursive;
 }
 
 .custom-card-header {
   background-color: var(--teal);
   color: var(--lightteal);
+  font-family: 'Edu NSW ACT Foundation', cursive;
 }
