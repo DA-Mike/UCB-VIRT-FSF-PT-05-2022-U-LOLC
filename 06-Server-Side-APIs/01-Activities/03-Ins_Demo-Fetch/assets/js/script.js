@@ -29,6 +29,8 @@ function getApi() {
         tableBody.appendChild(createTableRow);
       }
     });
-}
+    console.log("I am at the end of the getAPI function"); //returns first in console because the api fetch is asynchronous 
+  }
+
 
 fetchButton.addEventListener('click', getApi);

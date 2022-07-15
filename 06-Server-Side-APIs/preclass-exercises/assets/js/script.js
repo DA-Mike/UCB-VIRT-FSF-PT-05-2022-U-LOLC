@@ -15,11 +15,24 @@ function avgArray(arr) {
     for (i = 0; i < arr.length; i++) {
         total = total + arr[i];
     }
-    return total/arr.length;
+    return Math.round(total/arr.length);
+}
+
+function avgArray2 (arr) {
+    return arr.reduce(function (ele, acc)
+    {
+        return ele + acc;
+    }, 0) / arr.length;
 }
 
 arr1 = [1,2,3,4,5];
 arr2 = [10,20,30,40,50];
+arr3 = [1,3,7];
+arr4 = [10, 5];
+arr5 = [1.5,3,2.5,1];
 
-console.log(avgArray(arr1));
-console.log(avgArray(arr2));
+console.log(avgArray2(arr1));
+console.log(avgArray2(arr2));
+console.log(avgArray2(arr3));
+console.log(avgArray2(arr4));
+console.log(avgArray2(arr5));
