@@ -66,3 +66,15 @@ $(function () {
 
 // Add interaction here
 //
+$( function() {
+  $( "#skills-list" ).sortable({
+    placeholder: "prettier-ph", //"ui-state-highlight", added our own custom class
+    forcePlaceholderSize: true
+  });
+  // $( "#sortable" ).disableSelection();
+} );
+
+var forcePlaceholderSize = $( ".list-group" ).sortable( "option", "forcePlaceholderSize" );
+ 
+// Setter
+$( ".list-group" ).sortable( "option", "forcePlaceholderSize", true );
