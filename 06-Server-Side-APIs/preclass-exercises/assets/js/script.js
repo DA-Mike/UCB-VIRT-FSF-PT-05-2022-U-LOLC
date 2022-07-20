@@ -37,9 +37,40 @@
 // console.log(avgArray2(arr4));
 // console.log(avgArray2(arr5));
 
-var sample = function(){
-    var a = b = 3;
+// var sample = function(){
+//     var a = b = 3;
+// }
+// sample();
+// console.log("Is a defined?", typeof a !== "undefined");
+// console.log("Is b defined?", typeof b !== "undefined");
+
+// Write a function that takes in an input and returns true if it's an integer and false otherwise.
+
+// Ex:
+// Input: "7"
+// Output: false
+
+// Input: 7
+// Output: true
+
+// Input: 4.3
+// Output: false
+
+// function isInt(x) {
+//     if (typeof x === 'number' && x % 1 == 0){        
+//         return true;
+//     } 
+//     return false;
+// }
+
+// function isInt(val) {
+//     return typeof val === 'number' && val % 1 == 0;
+// }
+
+function isInt(val) {
+    return parseInt(val) === val;
 }
-sample();
-console.log("Is a defined?", typeof a !== "undefined");
-console.log("Is b defined?", typeof b !== "undefined");
+
+console.log(isInt("7"));
+console.log(isInt(7));
+console.log(isInt(4.3));
